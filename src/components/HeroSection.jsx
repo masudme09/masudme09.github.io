@@ -14,7 +14,7 @@ const HeroSection = () => {
         at <a href="https://www.globalreader.eu" target="_blank" rel="noreferrer" className="text-blue-400 hover:text-blue-500">
           GlobalReader OÜ</a>
       </h3>
-      <div className="block text-left">
+      <div className="block text-center">
         <h5 className="text-gray-300 text-base py-1">
           I build beautiful, functional, and scalable web applications.
         </h5>
