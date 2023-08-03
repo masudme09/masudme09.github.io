@@ -4,7 +4,7 @@ const Project = (props) => {
   return (
     <div className="flex flex-col group hover:bg-slate-800 p-5 rounded-xl md:flex-row">
 
-      <div className="w-full flex items-start py-3 px-3 md:w-1/4">
+      <div className="w-1/3 flex items-start py-3 md:px-3 md:w-1/4">
         {/* Image placeholder */}
         {<img
           src={props.project_image}
