@@ -10,11 +10,12 @@ const ProjectSection = ({ setActiveButton }) => {
   return (
     <section
       id="projects"
-      className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      className="mb-16 scroll-mt-16 w-full md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label="Projects"
       onMouseEnter={() => setActiveButton('PROJECT')}
     >
-      <div className="sticky top-0 z-20 mb-4 -mx-3 bg-slate-900/75 px-6 py-5 backdrop-blur lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+      <div className="sticky top-0 z-20 mb-4 -mx-3 bg-slate-900/75 px-6 py-5 backdrop-blur lg:sr-only
+      lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
           Projects
         </h2>
@@ -141,7 +142,7 @@ const ProjectSection = ({ setActiveButton }) => {
               <p className='font-bold '>
                 Github Project Link: <a href='https://github.com/masudme09/Buddi'
                   className='text-blue-500 hover:text-blue-700'
-                >https://github.com/masudme09/Buddi</a>
+                >Buddi</a>
               </p>
 
             </div>
@@ -149,78 +150,81 @@ const ProjectSection = ({ setActiveButton }) => {
 
           stack_tags={["Elixir", "Phoenix", "LiveView", "Ecto", "PostgreSQL", "TDD"]}
         />
+
+        <Project
+          // add placeholder image
+          project_image={"https://via.placeholder.com/150"}
+          project_title={"Exbanking"}
+          project_description={
+            <div>
+              <p>
+                This is an attempt to implement in-memory banking like solution.
+                Basically, I have played through different OTP behaviours like GenServers, Superviors etc.
+              </p>
+
+              <p className='font-bold '>
+                Github Project Link: <a href='https://github.com/masudme09/ExBanking'
+                  className='text-blue-500 hover:text-blue-700'
+                >ExBanking</a>
+              </p>
+
+            </div>
+          }
+          stack_tags={["Elixir", "Elixir OTP", "GenServer", "Supervisor", "TDD"]}
+
+        />
+
+
+        <Project
+          // add placeholder image
+          project_image={"https://via.placeholder.com/150"}
+          project_title={"PowerPointStudio"}
+          project_description={
+            <div className=''>
+              <p>
+                This project was built to automate the process of creating online presentations.
+                So, the idea was to take powerpoint opjects and convert them into JSON objects.
+                And later on feed that JSON to React application to generate similar looking light-weight web friendly presentation.
+                With this application, it is possible to convert a powerpoint presentation with commonly used shape into JSON or HTML.
+                This was really fun and challenging project due to shortcomings of OpenXML documentation.
+              </p>
+
+              <p className='font-bold'>
+                Github Link: <a href='https://github.com/masudme09/PowerPointStudio'
+                  className='text-blue-500 hover:text-blue-700'
+                >PowerPointStudio</a>
+              </p>
+            </div>
+          }
+          stack_tags={["C#", ".NET", "PowerPoint", "JSON", "HTML"]}
+        />
+
+        <Project
+          project_image={"https://via.placeholder.com/150"}
+          project_title={"KaiBank"}
+          project_description={
+            <div>
+              <p>
+                This is a open source API project to implement banking like solution. I have contributed to this project along with
+                other developers. Main goal of this project is to implement barebone
+                features of banking system and make it public for future enhancement by the community.
+                I have contributed to this project from brainstorming, design, implementation and testing.
+              </p>
+
+              <p className='font-bold '>
+                Gitlab Project Link: <a href='https://gitlab.com/pabasarajw/kaibank-backend'
+                  className='text-blue-500 hover:text-blue-700'
+                >kaibank-backend</a>
+              </p>
+            </div>
+          }
+
+          stack_tags={["Java 11", "Spring Boot", "Maven", "Apache Tomcat", "MySQL", "TDD"]}
+
+        />
+
       </div>
 
-      <Project
-        // add placeholder image
-        project_image={"https://via.placeholder.com/150"}
-        project_title={"Exbanking"}
-        project_description={
-          <div>
-            <p>
-              This is an attempt to implement in-memory banking like solution.
-              Basically, I have played through different OTP behaviours like GenServers, Superviors etc.
-            </p>
-
-            <p className='font-bold '>
-              Github Project Link: <a href='https://github.com/masudme09/ExBanking'
-                className='text-blue-500 hover:text-blue-700'
-              >https://github.com/masudme09/ExBanking</a>
-            </p>
-
-          </div>
-        }
-        stack_tags={["Elixir", "Elixir OTP", "GenServer", "Supervisor", "TDD"]}
-
-      />
-
-      <Project
-        // add placeholder image
-        project_image={"https://via.placeholder.com/150"}
-        project_title={"PowerPointStudio"}
-        project_description={
-          <div>
-            <p>
-              This project was built to automate the process of creating online presentations.
-              So, the idea was to take powerpoint opjects and convert them into JSON objects.
-              And later on feed that JSON to React application to generate similar looking light-weight web friendly presentation.
-              With this application, it is possible to convert a powerpoint presentation with commonly used shape into JSON or HTML.
-              This was really fun and challenging project due to shortcomings of OpenXML documentation.
-            </p>
-
-            <p className='font-bold '>
-              Github Project Link: <a href='https://github.com/masudme09/PowerPointStudio'
-                className='text-blue-500 hover:text-blue-700'
-              >https://github.com/masudme09/PowerPointStudio</a>
-            </p>
-          </div>
-        }
-        stack_tags={["C#", ".NET", "PowerPoint", "JSON", "HTML"]}
-      />
-
-      <Project
-        project_image={"https://via.placeholder.com/150"}
-        project_title={"KaiBank"}
-        project_description={
-          <div>
-            <p>
-              This is a open source API project to implement banking like solution. I have contributed to this project along with
-              other developers. Main goal of this project is to implement barebone
-              features of banking system and make it public for future enhancement by the community.
-              I have contributed to this project from brainstorming, design, implementation and testing.
-            </p>
-
-            <p className='font-bold '>
-              Gitlab Project Link: <a href='https://gitlab.com/pabasarajw/kaibank-backend'
-                className='text-blue-500 hover:text-blue-700'
-              >https://gitlab.com/pabasarajw/kaibank-backend</a>
-            </p>
-          </div>
-        }
-
-        stack_tags={["Java 11", "Spring Boot", "Maven", "Apache Tomcat", "MySQL", "TDD"]}
-
-      />
 
     </section>
   );
